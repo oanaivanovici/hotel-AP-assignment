@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomDetailController">
+   <children>
+      <SplitPane dividerPositions="0.3" layoutX="143.0" layoutY="98.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <VBox layoutX="37.0" layoutY="53.0" prefHeight="398.0" prefWidth="174.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ACTIONS" translateX="10.0" translateY="30.0">
+                           <font>
+                              <Font name="Geneva" size="24.0" />
+                           </font>
+                        </Text>
+                        <Button mnemonicParsing="false" onAction="#getRentRoomWindow" text="Rent Room" translateX="10.0" translateY="60.0">
+                           <font>
+                              <Font name="Geneva" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#getReturnRoomWindow" text="Return Room" translateX="10.0" translateY="90.0">
+                           <font>
+                              <Font name="Geneva" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#getPerformMaintenanceWindow" text="Perform Maintenance" translateX="10.0" translateY="120.0">
+                           <font>
+                              <Font name="Geneva" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#getCompleteMaintenanceWindow" text="Complete Maintenance" translateX="10.0" translateY="150.0">
+                           <font>
+                              <Font name="Geneva" size="13.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#getMainProgramWindow" text="Return to Main Window" translateX="10.0" translateY="180.0" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane layoutY="-6.0" prefHeight="361.0" prefWidth="423.0" translateY="50.0" AnchorPane.bottomAnchor="43.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-8.0" AnchorPane.topAnchor="-6.0">
+                     <content>
+                        <AnchorPane prefHeight="355.0" prefWidth="411.0">
+                           <children>
+                              <ImageView fx:id="roomImage" fitHeight="130.0" fitWidth="160.0" layoutX="251.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label fx:id="roomId" layoutX="135.0" layoutY="15.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="roomSummary" layoutX="135.0" layoutY="45.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="roomType" layoutX="135.0" layoutY="75.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="numberOfBeds" layoutX="135.0" layoutY="105.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="roomStatus" layoutX="135.0" layoutY="135.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="lastMaintenance" layoutX="135.0" layoutY="165.0">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Label>
+                              <Text layoutX="10.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room ID:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Summary:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room type:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number of beds:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Status:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hiring records:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="10.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Last maintenance:">
+                                 <font>
+                                    <Font name="Geneva" size="14.0" />
+                                 </font>
+                              </Text>
+                              <ListView fx:id="hiringRecordsList" layoutX="10.0" layoutY="217.0" prefHeight="125.0" prefWidth="390.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Text layoutX="-4.0" layoutY="1.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Details" translateX="20.0" translateY="30.0" AnchorPane.leftAnchor="-4.0" AnchorPane.topAnchor="-17.0">
+                     <font>
+                        <Font name="Geneva" size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>

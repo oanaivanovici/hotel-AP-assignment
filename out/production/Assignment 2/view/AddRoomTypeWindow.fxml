@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddRoomTypeController">
+   <children>
+      <Text layoutX="60.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add Room at City Lodge">
+         <font>
+            <Font name="Geneva" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please select which type of room you would like to add">
+         <font>
+            <Font name="Geneva" size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="60.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Room Type">
+         <font>
+            <Font name="Geneva" size="14.0" />
+         </font>
+      </Text>
+      <ChoiceBox fx:id="roomType" layoutX="171.0" layoutY="111.0" prefWidth="150.0" />
+      <Button layoutX="14.0" layoutY="356.0" mnemonicParsing="false" onAction="#getMainProgramWindow" text="Return to Main Program">
+         <font>
+            <Font name="Geneva" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="538.0" layoutY="356.0" mnemonicParsing="false" onAction="#addRoomDetails" text="Next">
+         <font>
+            <Font name="Geneva" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
